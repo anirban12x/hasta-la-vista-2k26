@@ -6,4 +6,25 @@
 // You can pass additional config via defineConfig({ vite: { ... } }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig();
+if (typeof process.stdin.off !== "function") {
+	process.stdin.off = process.stdin.removeListener.bind(process.stdin);
+}
+
+export default defineConfig({
+	tanstackStart: {
+		server: {
+			entry: "index",
+		},
+		prerender: {
+			enabled: true,
+			autoSubfolderIndex: true,
+			crawlLinks: false,
+		},
+		pages: [
+			{ path: "/" },
+			{ path: "/team" },
+			{ path: "/gallery" },
+			{ path: "/contact" },
+		],
+	},
+});
