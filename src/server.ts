@@ -4,5 +4,5 @@ import { createServerEntry } from "@tanstack/react-start/server-entry";
 const fetch = createStartHandler(defaultStreamHandler);
 
 export default createServerEntry({
-  fetch,
+    fetch,
 });
