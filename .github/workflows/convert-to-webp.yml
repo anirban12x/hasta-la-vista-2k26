@@ -1,0 +1,42 @@
+name: Convert Images to WebP
+
+on:
+  push:
+    branches: ["main"]
+    paths-ignore:
+      - '**/*.webp'
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install WebP tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y webp
+
+      - name: Convert images and remove originals
+        run: |
+          find . -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) -print0 | while IFS= read -r -d '' file; do
+            new="${file%.*}.webp"
+            echo "Converting $file -> $new"
+            cwebp -q 80 "$file" -o "$new"
+            rm "$file"
+          done
+
+      - name: Commit & push changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+
+          git add -A
+          git commit -m "Convert images to WebP and remove originals" || echo "No changes to commit"
+
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
