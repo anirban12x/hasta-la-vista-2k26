@@ -1,4 +1,4 @@
-export function MemberCard({ name, role, highlight = false }: { name: string; role: string; highlight?: boolean }) {
+export function MemberCard({ name, role, image, highlight = false }: { name: string; role: string; image?: string; highlight?: boolean }) {
   return (
     <div
       className={`relative flex shrink-0 flex-col items-center justify-center px-8 py-10 text-center ${
@@ -12,12 +12,16 @@ export function MemberCard({ name, role, highlight = false }: { name: string; ro
         boxShadow: highlight ? "0 0 30px rgba(218,165,32,0.4)" : undefined,
       }}
     >
-      <div
-        className="flex h-16 w-16 items-center justify-center rounded-full font-display text-xl italic text-[#FFF8DC]"
-        style={{ background: "radial-gradient(circle, #8B0000, #1A0A0A)", border: "1px solid #DAA520" }}
-      >
-        {name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
-      </div>
+      {image ? (
+        <img src={image} alt={name} className="h-16 w-16 rounded-full object-cover border border-[#DAA520]" />
+      ) : (
+        <div
+          className="flex h-16 w-16 items-center justify-center rounded-full font-display text-xl italic text-[#FFF8DC]"
+          style={{ background: "radial-gradient(circle, #8B0000, #1A0A0A)", border: "1px solid #DAA520" }}
+        >
+          {name.split(" ").map((n) => n[0]).join("").slice(0, 2)}
+        </div>
+      )}
       <h4 className="mt-4 font-display text-xl italic text-gradient-gold">{name}</h4>
       <p className="mt-2 font-ornament text-[10px] uppercase tracking-[0.3em] text-[#FFF8DC]/70">
         {role}

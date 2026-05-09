@@ -44,7 +44,7 @@ function TeamPage() {
           <div className="mt-12 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
             {teams.executive.members.map((m, i) => (
               <RevealOnScroll key={m.name} index={i}>
-                <MemberCard name={m.name} role={m.role} highlight />
+                <MemberCard name={m.name} role={m.role} image={m.image} highlight />
               </RevealOnScroll>
             ))}
           </div>
@@ -61,7 +61,7 @@ function TeamPage() {
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {dept.members.map((m, i) => (
                 <RevealOnScroll key={`${dept.label}-${m.name}`} index={i + di}>
-                  <MemberCard name={m.name} role={m.role} />
+                  <MemberCard name={m.name} role={m.role} image={m.image} />
                 </RevealOnScroll>
               ))}
             </div>
