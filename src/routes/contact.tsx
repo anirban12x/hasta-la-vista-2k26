@@ -70,9 +70,14 @@ function ContactPage() {
             </a>
           </div>
           <div>
-            <p className="font-ornament text-xs uppercase tracking-[0.4em] text-[#DAA520]/70">— Phone —</p>
-            <a href={`tel:${contactInfo.phone}`} className="mt-2 flex items-center gap-3 font-display text-2xl italic text-gradient-gold hover:underline">
-              <Phone size={20} className="text-[#DAA520]" /> {contactInfo.phone}
+            <p className="font-ornament text-xs uppercase tracking-[0.4em] text-[#DAA520]/70">— Instagram —</p>
+            <a
+              href="https://www.instagram.com/hasta_la_vista.tmsl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 flex items-center gap-3 font-display text-2xl italic text-gradient-gold hover:underline"
+            >
+              <Instagram size={20} className="text-[#DAA520]" /> @hasta_la_vista.tmsl
             </a>
           </div>
           <div>
@@ -82,17 +87,36 @@ function ContactPage() {
             </p>
           </div>
 
-          <div className="flex gap-4 pt-6">
-            {[Instagram, Linkedin, Github].map((Icon, i) => (
+          {/* <div className="flex gap-4 pt-6">
+            {[
+              {
+                Icon: Instagram,
+                href: "https://www.instagram.com/hasta_la_vista.tmsl",
+                aria: "Instagram",
+              },
+              {
+                Icon: Linkedin,
+                href: "",
+                aria: "LinkedIn",
+              },
+              {
+                Icon: Github,
+                href: "",
+                aria: "GitHub",
+              },
+            ].map(({ Icon, href, aria }, i) => (
               <a
                 key={i}
-                href="#"
+                href={href || "#"}
+                aria-label={aria}
+                target={href ? "_blank" : undefined}
+                rel={href ? "noopener noreferrer" : undefined}
                 className="flex h-12 w-12 items-center justify-center rounded-full border border-[#DAA520] text-[#DAA520] transition-all hover:bg-[#DAA520] hover:text-[#1A0A0A] hover:gold-glow"
               >
                 <Icon size={18} />
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Form */}
