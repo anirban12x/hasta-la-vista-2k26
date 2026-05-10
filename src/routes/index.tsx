@@ -11,8 +11,8 @@ import { LotusDivider } from "@/components/effects/Ornaments";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hasta La Vista 2026 — TMSL CSE Dept Farewell" },
-      { name: "description", content: "An immersive TMSL CSE Department farewell experience for the 2026 passout batch — Hasta La Vista 2026." },
+      { title: "Hasta La Vista 2026 — TMSL CSE & CSBS Dept Farewell" },
+      { name: "description", content: "An immersive TMSL CSE & CSBS Department farewell experience for the 2026 passout batch — Hasta La Vista 2026." },
     ],
   }),
   component: Index,
@@ -35,7 +35,7 @@ function Index() {
             Be Part of the Story
           </h2>
           <p className="mt-6 font-body text-[#FFF8DC]/75">
-            Join us as we make this farewell unforgettable. Register your presence and celebrate the TMSL CSE 2026 passout batch in style.
+            Join us as we make this farewell unforgettable. Register your presence and celebrate the TMSL CSE & CSBS 2026 passout batch in style.
           </p>
           <div className="mt-10">
             <MagneticButton

@@ -1,5 +1,6 @@
 import { LotusDivider } from "@/components/effects/Ornaments";
 import { contactInfo } from "@/data/content";
+import { Instagram } from "lucide-react";
 
 export function Footer() {
   return (
@@ -10,19 +11,22 @@ export function Footer() {
           Hasta La Vista, 2026
         </h3>
         <p className="mt-4 font-body text-sm text-[#FFF8DC]/60 md:text-base">
-          TMSL CSE Department farewell for the 2026 passout batch · Where every goodbye starts a beautiful story
+          TMSL CSE & CSBS Department farewell for the 2026 passout batch · Where every goodbye starts a beautiful story
         </p>
 
         <div className="mt-10 grid gap-3 font-body text-sm text-[#FFF8DC]/70 sm:grid-cols-3">
           <p>📧 {contactInfo.email}</p>
-          <p>📞 {contactInfo.phone}</p>
+          {/* <p>📞 {contactInfo.phone}</p> */}
+          <a href={contactInfo.instagram} className="inline-flex items-center justify-center gap-2 hover:underline">
+            <Instagram size={16} /> @hasta_la_vista.tmsl
+          </a>
           <p>📍 {contactInfo.address}</p>
         </div>
 
         <div className="mt-12 flex items-center justify-center gap-6">
           <Marigold />
           <p className="font-ornament text-xs uppercase tracking-[0.4em] text-[#DAA520]">
-            Made with ❤ by the Hasta La Vista Core Committee · TMSL CSE 2026
+            Made with ❤ by the Hasta La Vista Core Committee · TMSL CSE & CSBS 2026
           </p>
           <Marigold />
         </div>

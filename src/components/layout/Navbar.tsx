@@ -33,7 +33,7 @@ export function Navbar() {
         <Link to="/" className="group flex items-center gap-3">
           <span className="font-ornament text-2xl font-bold text-gradient-gold">HLV</span>
           <span className="hidden font-body text-xs uppercase tracking-[0.4em] text-[#DAA520]/80 sm:block">
-            Hasta La Vista · 2026 · TMSL CSE
+            Hasta La Vista · 2026 · TMSL CSE & CSBS
           </span>
         </Link>
 

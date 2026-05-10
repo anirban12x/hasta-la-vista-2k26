@@ -60,7 +60,7 @@ export function HeroSection() {
           className="relative z-10 flex flex-col items-center px-6 text-center"
         >
           <p className="font-ornament mb-6 text-xs uppercase tracking-[0.6em] text-[#DAA520]">
-            ✦ TMSL CSE Department · Passout Batch 2026 ✦
+            ✦ TMSL CSE & CSBS Department · Passout Batch 2026 ✦
           </p>
           <h1 className="font-display text-4xl italic leading-[0.95] sm:text-6xl md:text-8xl lg:text-[10rem]">
             <span className="text-gradient-gold">Hasta</span>{" "}
@@ -72,7 +72,7 @@ export function HeroSection() {
           </p>
           <LotusDivider className="my-8" />
           <p className="max-w-2xl font-body text-base text-[#FFF8DC]/80 md:text-lg">
-            A farewell to remember for the TMSL CSE 2026 passout batch.
+            A farewell to remember for the TMSL CSE & CSBS 2026 passout batch.
             Where goodbyes turn into beautiful stories.
           </p>
 

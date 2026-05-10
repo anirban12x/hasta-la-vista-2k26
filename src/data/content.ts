@@ -9,11 +9,11 @@ export const teachers = [
 
 export const slogans = [
   "✦ Farewell Memories",
-  "☽ Cheers to CSE Batch",
+  "☽ Cheers to CSE & CSBS Batch",
   "✦ Goodbye Legends",
   "☽ TMSL Chronicles",
   "✦ Hasta La Vista 2026",
-  "☽ TMSL CSE Farewell",
+  "☽ TMSL CSE & CSBS Farewell",
 ];
 
 export const vibes = [
@@ -237,4 +237,5 @@ export const contactInfo = {
   email: "hastalavista.tmsl@gmail.com",
   phone: "+91 99999 99999",
   address: "Techno Main Salt Lake, Kolkata",
+  instagram: "https://www.instagram.com/hasta_la_vista.tmsl",
 };
