@@ -58,7 +58,7 @@ function TeamPage() {
             <h2 className="text-center font-display text-3xl italic text-gradient-gold md:text-5xl">
               {dept.label}
             </h2>
-            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className="mt-10 flex flex-wrap justify-center gap-6">
               {dept.members.map((m, i) => (
                 <RevealOnScroll key={`${dept.label}-${m.name}`} index={i + di}>
                   <MemberCard name={m.name} role={m.role} image={m.image} />
