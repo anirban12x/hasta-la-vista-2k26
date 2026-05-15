@@ -52,12 +52,15 @@ export function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <MagneticButton
-            as="a"
-            href="#register"
+          <MagneticButton>
+            <a 
+            href="https://luma.com/lkw72drx" 
+            target="_blank" 
+            rel="noopener noreferrer"   // Security best practice
             className="inline-block border border-[#DAA520] px-5 py-2 font-ornament text-xs uppercase tracking-[0.3em] text-[#DAA520] transition-colors hover:bg-[#DAA520] hover:text-[#1A0A0A]"
-          >
-            ✦ Register
+            >
+              ✦ Register
+            </a>
           </MagneticButton>
         </div>
 
