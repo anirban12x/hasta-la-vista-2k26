@@ -1,4 +1,4 @@
-import { useRef, useState, type ReactNode, type MouseEvent } from "react";
+import { useRef, useState, useEffect, type ReactNode, type MouseEvent } from "react";
 import { motion } from "framer-motion";
 
 export function MagneticButton({
@@ -16,7 +16,14 @@ export function MagneticButton({
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [pos, setPos] = useState({ x: 0, y: 0 });
-  const [isMobile, setIsMobile] = useState(() => typeof window !== "undefined" && window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const handle = (e: MouseEvent) => {
     if (!ref.current || isMobile) return;

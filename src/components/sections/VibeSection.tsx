@@ -4,16 +4,16 @@ import { Mandala, LotusDivider } from "@/components/effects/Ornaments";
 
 export function VibeSection() {
   return (
-    <section id="vibe" className="relative overflow-hidden px-6 py-32">
+    <section id="vibe" className="relative overflow-hidden px-6 py-12 md:py-32">
       <div className="mx-auto max-w-6xl text-center">
-        <p className="font-ornament text-xs uppercase tracking-[0.5em] text-[#DAA520]">
+        <p className="font-ornament text-[10px] uppercase tracking-[0.3em] text-[#DAA520] sm:text-xs sm:tracking-[0.5em]">
           ✦ The Experience ✦
         </p>
-        <h2 className="mt-4 font-display text-5xl italic text-gradient-gold md:text-7xl">
+        <h2 className="mt-4 font-display text-4xl italic text-gradient-gold sm:text-5xl md:text-7xl">
           What Can You Expect?
         </h2>
         <LotusDivider className="mt-6" />
-        <p className="mx-auto mt-8 max-w-3xl font-body text-base leading-relaxed text-[#FFF8DC]/80 md:text-lg">
+        <p className="mx-auto mt-8 max-w-3xl font-body text-sm leading-relaxed text-[#FFF8DC]/80 sm:text-base md:text-lg">
           A cinematic evening full of laughter, nostalgia, heartfelt moments, and one last legendary celebration
           with your batchmates before the next chapter begins.
         </p>
@@ -55,7 +55,7 @@ export function VibeSection() {
       </div>
 
       {/* Mobile: poster grid */}
-      <div className="mx-auto mt-16 grid max-w-md grid-cols-2 gap-4 md:hidden">
+      <div className="mx-auto mt-16 grid max-w-sm grid-cols-2 gap-4 md:hidden">
         {vibes.map((v, i) => (
           <motion.div
             key={v.label}
@@ -63,10 +63,10 @@ export function VibeSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.05 }}
-            className="glass-panel flex aspect-square flex-col items-center justify-center"
+            className="glass-panel flex aspect-square flex-col items-center justify-center p-4"
           >
             <div className="text-3xl">{v.icon}</div>
-            <div className="mt-2 font-ornament text-[10px] uppercase tracking-[0.3em] text-[#DAA520]">
+            <div className="mt-3 font-ornament text-[9px] uppercase tracking-[0.2em] text-[#DAA520] text-center">
               {v.label}
             </div>
           </motion.div>

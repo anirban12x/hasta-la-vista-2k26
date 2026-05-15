@@ -5,16 +5,16 @@ import { LotusDivider } from "@/components/effects/Ornaments";
 
 export function TeachersSection() {
   return (
-    <section className="relative px-6 py-32">
+    <section className="relative px-6 py-12 sm:py-32">
       <div className="mx-auto max-w-6xl text-center">
-        <p className="font-ornament text-xs uppercase tracking-[0.5em] text-[#DAA520]">
+        <p className="font-ornament text-[10px] uppercase tracking-[0.3em] text-[#DAA520] sm:text-xs sm:tracking-[0.5em]">
           ✦ Words From Our Mentors ✦
         </p>
-        <h2 className="mt-4 font-display text-5xl italic text-gradient-gold md:text-7xl">
+        <h2 className="mt-4 font-display text-4xl italic text-gradient-gold sm:text-5xl md:text-7xl">
           Voices That Shaped Us
         </h2>
         <LotusDivider className="mt-6" />
-        <p className="mt-6 font-body text-[#FFF8DC]/70">
+        <p className="mt-6 font-body text-sm text-[#FFF8DC]/70 sm:text-base">
           The teachers who turned classrooms into cathedrals of learning.
         </p>
       </div>

@@ -59,28 +59,28 @@ export function HeroSection() {
           style={{ y: titleY, opacity: titleOpacity }}
           className="relative z-10 flex flex-col items-center px-6 text-center"
         >
-          <p className="font-ornament mb-6 text-xs uppercase tracking-[0.6em] text-[#DAA520]">
+          <p className="font-ornament mb-6 text-[10px] uppercase tracking-[0.3em] text-[#DAA520] sm:mb-12 sm:text-xs sm:tracking-[0.6em]">
             ✦ TMSL CSE & CSBS Department · Passout Batch 2026 ✦
           </p>
-          <h1 className="font-display text-4xl italic leading-[0.95] sm:text-6xl md:text-8xl lg:text-[10rem]">
+          <h1 className="font-display text-5xl italic leading-[0.95] sm:text-7xl md:text-8xl lg:text-[10rem]">
             <span className="text-gradient-gold">Hasta</span>{" "}
             <span className="text-[#FFF8DC]">La</span>{" "}
             <span className="text-gradient-crimson">Vista</span>
           </h1>
-          <p className="font-deva mt-4 text-2xl text-[#FFF8DC]/80 md:text-3xl">
+          <p className="font-deva mt-4 text-xl text-[#FFF8DC]/80 sm:text-2xl md:text-3xl">
             नया ज़माना · पुरानी शान
           </p>
-          <LotusDivider className="my-8" />
-          <p className="max-w-2xl font-body text-base text-[#FFF8DC]/80 md:text-lg">
+          <LotusDivider className="my-6 sm:my-8" />
+          <p className="max-w-2xl font-body text-sm text-[#FFF8DC]/80 sm:text-base md:text-lg">
             A farewell to remember for the TMSL CSE & CSBS 2026 passout batch.
             Where goodbyes turn into beautiful stories.
           </p>
 
-          <div className="mt-10">
+          <div className="mt-8 sm:mt-10">
             <MagneticButton
               as="a"
               href="#vibe"
-              className="inline-block border-2 border-[#DAA520] bg-[#8B0000]/40 px-10 py-4 font-ornament text-sm uppercase tracking-[0.4em] text-[#DAA520] backdrop-blur-md transition-all hover:bg-[#DAA520] hover:text-[#1A0A0A] gold-glow"
+              className="inline-block border-2 border-[#DAA520] bg-[#8B0000]/40 px-6 py-3 font-ornament text-xs uppercase tracking-[0.2em] text-[#DAA520] backdrop-blur-md transition-all hover:bg-[#DAA520] hover:text-[#1A0A0A] gold-glow sm:px-10 sm:py-4 sm:text-sm sm:tracking-[0.4em]"
             >
               ✦ Get Started ✦
             </MagneticButton>
