@@ -82,6 +82,7 @@ export const teams = {
       { name: "Arghyadip Pakhira", role: "Jt. Graphics Head · CSE 3Y", image: "./members/Arghyadip.webp" },
       { name: "Anish Seth", role: "Jt. Graphics Head · CSBS 3Y", image: "./members/Anish.webp" },
       { name: "Antik Mondal", role: "Graphics Co-Head · CSE 2Y", image: "./members/Antik.webp" },
+      { name: "Unnita Karmakar", role: "Graphics Co-Head · CSE 2Y", image: "./members/Unnita.webp" },
     ],
   },
   management: {
@@ -98,6 +99,7 @@ export const teams = {
       { name: "Anirban Bandyopadhyay", role: "Jt. Technical Head · CSE 3Y", image: "./members/Anirban.webp" },
       { name: "Priyobrata Mandal", role: "Jt. Technical Head · CSE 3Y", image: "./members/Priyobrata.webp" },
       { name: "Anjali Ray", role: "Technical Co-Head · CSE 2Y", image: "./members/Anjali.webp" },
+      { name: "Soumyojeet Samajdar", role: "Technical Co-Head · CSE 2Y", image: "./members/Soumyojeet.webp" },
     ],
   },
   resource: {
@@ -121,7 +123,7 @@ export const teams = {
     label: "Cultural Wing",
     members: [
       { name: "Harsh Mrigank", role: "Jt. Music Head · CSE 3Y", image: "./members/Harshmrigank.webp" },
-      { name: "Souvik Rakshit", role: "Jt. Music Head · CSBS 3Y", image: "./members/Souvik.webp" },
+      { name: "Souvik Rakshit", role: "Jt. Music Head · CSBS 3Y", image: "./members/Souvik2.webp" },
       { name: "Srijita Bose", role: "Music Co-Head · CSBS 2Y", image: "./members/Srijita.webp" },
       { name: "Madhurima Ghosh", role: "Dance Head · CSE 3Y", image: "./members/Madhurima.webp" },
       { name: "Sreejeta Maji", role: "Dance Co-Head · CSE 2Y", image: "./members/Sreejeta.webp" },
