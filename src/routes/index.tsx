@@ -40,7 +40,9 @@ function Index() {
           <div className="mt-10">
             <MagneticButton
               as="a"
-              href="/contact"
+              href="https://luma.com/lkw72drx"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block border-2 border-[#DAA520] bg-[#8B0000]/40 px-6 py-3 font-ornament text-xs uppercase tracking-[0.2em] text-[#DAA520] gold-glow transition-all hover:bg-[#DAA520] hover:text-[#1A0A0A] whitespace-nowrap sm:px-10 sm:py-4 sm:text-sm sm:tracking-[0.4em]"
             >
               ✦ Register Now ✦
